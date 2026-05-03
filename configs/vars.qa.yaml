@@ -1,0 +1,4 @@
+# 환경별 변수 설정
+# accounts:
+#   - id: test@example.com
+#     pw: password123

@@ -1,0 +1,26 @@
+# 테스트 산출물
+traces/
+videos/
+logs/
+allure-results/
+../../../IdeaProjects/automation_report/public/allure-report/
+snapshot_tests_failures/
+
+# 쿠키
+cookie_*.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# 환경 (필요 시 주석 해제)
+# .env

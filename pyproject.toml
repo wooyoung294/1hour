@@ -1,0 +1,50 @@
+[project]
+name = "1hour"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "playwright>=1.40",
+    "pytest>=8.0",
+    "pytest-bdd>=7.0",
+    "pytest-xdist>=3.0",
+    "pytest-rerunfailures>=14.0",
+    "allure-pytest>=2.13",
+    "loguru>=0.7",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0",
+    "Pillow>=12.0",
+    "tenacity>=9.0",
+]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "W", "PT"]
+
+[tool.ruff.lint.per-file-ignores]
+"case/test_*.py" = ["PT004", "F403", "F405", "I001", "E501"]
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = "single"
+multiline-quotes = "single"
+docstring-quotes = "double"
+avoid-escape = false
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+force-sort-within-sections = true
+
+[tool.logging]
+level = "INFO"
+debug_level = "DEBUG"
+format = "<green>{time:HH:mm:ss}</green> | <level>{level: <8}</level> | <level>{message}</level>"
+file_format = "{time:YYYY-MM-DD HH:mm:ss} | {level: <8} | {message}"
+file_path = "logs/test_{time:YYYY-MM-DD}.log"
+rotation = "1 day"
+retention = "7 days"
