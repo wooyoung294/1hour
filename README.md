@@ -1,6 +1,7 @@
 # 원아워
 
 원아워(1hour.ai) 웹 E2E 자동화 테스트 (Playwright + pytest-bdd)
+**리포트**: https://onehour.wooyoung.site/ (Azure Static Web Apps 배포)  
 
 ## 테스트 시나리오
 
